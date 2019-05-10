@@ -1,15 +1,33 @@
 //    Copyright (c) The League of Amazing Programmers 2013-2018
 //    Level 0
 
-
 package random;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class Magic8Ball {
 
 	// 1. Make a main method that includes all the steps below….
-
+public static void main(String[] args) {
+	JOptionPane.showInputDialog(null, "What do you want to ask amazon Dmitri");
+	Random rande= new Random();
+	int r =rande.nextInt(4);
+	System.out.println(r);
+	if (r == 0) {
+		JOptionPane.showMessageDialog(null, "Yes");
+	}
+	if (r == 1) {
+		JOptionPane.showMessageDialog(null, "No");
+	}
+	if (r == 2) {
+		JOptionPane.showMessageDialog(null, "Ask Google");
+	}
+	if (r == 3) {
+		JOptionPane.showMessageDialog(null, "Ask Siri");
+	}
+	}
 	// 2. Make a variable that will hold a random number and put a random number into this variable using "new Random().nextInt(4)"
 
 	// 3. Print out this variable
