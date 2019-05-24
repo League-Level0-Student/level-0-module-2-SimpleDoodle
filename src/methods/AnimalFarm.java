@@ -17,9 +17,24 @@ public class AnimalFarm {
 		 * 1. Ask the user which animal they want, then play the sound of that animal.
 		 */
 		for ( ; true ; ) {
-			String Ani=JOptionPane.showInputDialog(null, "What animal do you want? A duck, cow, dog, cat, or llama");
+			String Ani=JOptionPane.showInputDialog(null, "What animal do you want? A duck, cow, dog, cat, llama, or type exit to exit.");
 			if (Ani.equalsIgnoreCase("cow")) {
 				playNoise(mooFile);
+			}
+			if (Ani.equalsIgnoreCase("duck")) {
+				playNoise(quackFile);
+			}
+			if (Ani.equalsIgnoreCase("dog")) {
+				playNoise(woofFile);
+			}
+			if (Ani.equalsIgnoreCase("cat")) {
+				playNoise(meowFile);
+			}
+			if (Ani.equalsIgnoreCase("llama")) {
+				playNoise(llamaFile);
+			}
+			if (Ani.equalsIgnoreCase("exit")) {
+				break;
 			}
 		}
 		
